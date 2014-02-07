@@ -55,22 +55,22 @@
     if ($result == FALSE) {
         die(mysql_error());
     }
-while ($row = mysql_fetch_array($result)) { 
-	echo"				<div class='panel-group' id='accordion'>
+ while ($row = mysql_fetch_array($result)) { 
+				echo"	<div class='panel-group' id='accordion'>
 							<div class='panel panel-default'>
 								<div class='panel-heading'>
 									<h4 class='panel-title'>
-						                <a class='accordion-toggle' data-toggle='collapse' data-parent='#accordion' href='#panel1'> " . $row["course_name"] . "</a>
+						                <a class='accordion-toggle' data-toggle='collapse' data-parent='#accordion' href='#panel1'>" . $row["course_name"] . "</a>
 	 								</h4>
 								</div>
 								<div id='panel1' class='panel-collapse collapse'>
 									<div class='panel-body'>
-						           First  " . $row["mark_first"] . "</div>
+						           " . $row["mark_first"] . "</div>
 								</div>
 						    </div>
 					</div>
 	";
-}
+	}
 	?>
 							
 	</body>
