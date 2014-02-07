@@ -89,7 +89,7 @@
             ?>
             <select id="myList" class="styled-select" name="soso" >
                  <option>Select..</option>
-                <option>first_2013</option>
+                <option>First_ 2013</option>
                 <option>second_2013</option>  
                 <option>summer_2013</option>  
             </select>
