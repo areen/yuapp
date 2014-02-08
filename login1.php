@@ -3,7 +3,7 @@
 
 
         <link rel='stylesheet' type='text/css' href='styles.css' />
-        	<link rel='stylesheet' type='text/css' href='http://areen.dc7.us/New%20folder/images.css' />
+        	<link rel="stylesheet" type="text/css" href="http://areen.dc7.us/New%20folder/images.css" />
         <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
         <script type='text/javascript' src='menu_jquery.js'></script>
         <meta charset=utf-8 />
@@ -42,13 +42,13 @@
             while ($row = mysql_fetch_array($result)) {
                 ///// retreiving image from mysql :
 
-                echo" <img class='art-image' src='http://areen.dc7.us/New%20folder/Capture.PNG'>";
-                echo"  <img  class='art-img' src='http://areen.dc7.us/New%20folder/imag.php?SN1=" . $row["student_id"] . "'  />";
+                echo" <img class='art-image'id='img1' src='http://areen.dc7.us/New%20folder/Capture.PNG'>";
+                echo"  <img  class='art-img' id='img2' src='http://areen.dc7.us/New%20folder/imag.php?SN1=" . $row["student_id"] . "'  />";
 
                 echo" </br>";
-                echo "<div   class='zzzz'>Student Name: " . $row["student_name"] . "</br></div>";
-                echo "<div   class='zzzz'>Academic Dept: " . $row["dept"] . "</br></div>";
-                echo "<div   class='zzzz'>ID : " . $row["student_id"] . "</br></div>";
+                echo "<div   class='zzzz' id='z'>Student Name: " . $row["student_name"] . "</br></div>";
+                echo "<div   class='zzzz' id='z'>Academic Dept: " . $row["dept"] . "</br></div>";
+                echo "<div   class='zzzz' id='z'>ID : " . $row["student_id"] . "</br></div>";
 
                 echo "<input style='display:none' id='my_id'  name='areen' size='13' hight='10' value=" . $row["student_id"] . " />";
                 ECHO "</br>";
