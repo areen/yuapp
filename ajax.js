@@ -27,16 +27,27 @@ $(document).ready(function(){
          if($("#my_id").val() === "" || $("#myList").val() === "")
              $("div#one").html("please enter boh Id AND Password");
          else
-             $.post($("#myform").attr("action"),
-              $("#myform :input").serializeArray(),
+             $.post($("#myform2").attr("action"),
+              $("#myform2 :input").serializeArray(),
             function(data){
                 $("div#one").html(data);
          
             });
-            $("#myform").submit(function(){
+            $("#myform2").submit(function(){
                 return false;
             });
             });
+});
+
+$(document).ready(function () {
+  $('#nav > li > a').click(function(){
+    if ($(this).attr('class') != 'active'){
+      $('#nav li ul').slideUp();
+      $(this).next().slideToggle();
+      $('#nav li a').removeClass('active');
+      $(this).addClass('active');
+    }
+  });
 });
 
 
