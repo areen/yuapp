@@ -3,11 +3,12 @@
 
 
         <link rel='stylesheet' type='text/css' href='styles.css' />
-        	<link rel="stylesheet" type="text/css" href="http://areen.dc7.us/New%20folder/images.css" />
+        
         <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
         <script type='text/javascript' src='menu_jquery.js'></script>
         <meta charset=utf-8 />
         <script type="text/javascript" src="http://areen.dc7.us/New%20folder/ajax.js"></script>
+        	 <link rel="stylesheet" href="http://areen.dc7.us/css.css">
 
         <style  type="text/css">
          
@@ -42,8 +43,8 @@
             while ($row = mysql_fetch_array($result)) {
                 ///// retreiving image from mysql :
 
-                echo" <img class='art-image'id='img1' src='http://areen.dc7.us/New%20folder/Capture.PNG'>";
-                echo"  <img  class='art-img' id='img2' src='http://areen.dc7.us/New%20folder/imag.php?SN1=" . $row["student_id"] . "'  />";
+                echo"<img class='art-image'  src='http://areen.dc7.us/New%20folder/Capture.PNG' />";
+                echo"<img  class='art-img'  src='http://areen.dc7.us/New%20folder/imag.php?SN1=" . $row["student_id"] . "'  />";
 
                 echo" </br>";
                 echo "<div   class='zzzz' >Student Name: " . $row["student_name"] . "</br></div>";
