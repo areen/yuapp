@@ -8,11 +8,10 @@
         <script type='text/javascript' src='menu_jquery.js'></script>
         <meta charset=utf-8 />
         <script type="text/javascript" src="http://areen.dc7.us/New%20folder/ajax.js"></script>
-        	 <link rel="stylesheet" href="http://areen.dc7.us/css.css">
+        	 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+                   <link rel="stylesheet" href="http://areen.dc7.us/New%20folder/css.css">
 
-        <style  type="text/css">
-         
-        </style>
+       ]
 
         <script language="JavaScript">
 
